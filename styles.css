@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+}
+
+.form-icon {
+    color: red;
+    font-size: 25px;
+}
+
+.title {
+    color: red;
+    font-size: 65px;
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    align-self: flex-start;
+    display: flex;
+    gap: 40px;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: red;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+main {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 50px;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.card {
+    max-height: 450px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .5s ease-in-out;
+    margin-bottom: 100px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 9px 1px rgba(157, 157, 157, 0.524);
+    transform: scale(1.1);
+}
+
+.card-icon {
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 15px;
+    bottom: 80px;
+    right: 70px;
+}
+
+.movie-type {
+    color: white;
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+}
+
+.movie-poster {
+    height: 350px;
+    width: 250px;
+}
+
+.movie-info {
+    color: white;
+    margin: 0;
+}
+
+.movie-info:first-of-type {
+    margin: 25px 0 10px;
+
+}
+
+.movie-span {
+    color: rgb(167, 167, 3);
+}
+
+/* .detail-container {
+    display: grid;
+    grid-template-columns: 800px 300px 800px;
+} */
+.detail-container {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto 100px;
+    gap: 30px;
+
+}
+
+.detail-subtitle-p,
+.detail-info-p {
+    color: white;
+}
+
+.detail-poster {
+    max-height: 700px;
+    max-width: 500px;
+}
+
+table {
+    height: 400px;
+
+}
+
+tr td {
+    color: white;
+    vertical-align: top;
+    margin-right: 50px;
+}
+
+tr {
+    padding-bottom: 50px !important;
+}
+
+.subtitle {
+    color: rgb(209, 209, 4);
+}
+
+@media (max-width: 768px) {
+
+    .detail-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto 100px;
+        gap: 5px;
+    }
+
+    table {
+        margin-top: 50px;
+    }
+
+    tr td {
+        padding: 0 10px 10px;
+    }
+
+    .title {
+        align-self: center;
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    .nav-item {
+        font-size: 18px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+}
